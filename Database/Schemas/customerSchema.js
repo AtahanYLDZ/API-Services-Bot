@@ -3,7 +3,6 @@ const stuffs = require("stuffs");
 
 const customerSchema = new mongoose.Schema({
 
-    Username: { type: String, default: "Perla Yönetim Botu" },
     Password: { type: String, default: stuffs.randomString(12) },
     TwoFactor: { 
         active: { type: Boolean, default: false },
